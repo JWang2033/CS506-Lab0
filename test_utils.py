@@ -15,7 +15,8 @@ def test_dot_product():
 def test_cosine_similarity():
     vector1 = np.array([1, 2, 3])
     vector2 = np.array([4, 5, 6])
-
+    norm1 = np.linalg.norm(vector1)
+    norm2 = np.linalg.norm(vector2)
     # Calculate cosine similarity
     dot_product = np.dot(vector1, vector2)
     
